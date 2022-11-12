@@ -13,15 +13,15 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "request",
+    "requestDTO",
     "location",
     "current"
 })
 @Generated("jsonschema2pojo")
 public class WeatherDTO {
 
-    @JsonProperty("request")
-    private RequestDTO request;
+    @JsonProperty("requestDTO")
+    private RequestDTO requestDTO;
     @JsonProperty("location")
     private LocationDTO locationDTO;
     @JsonProperty("current")
@@ -29,14 +29,14 @@ public class WeatherDTO {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("request")
-    public RequestDTO getRequest() {
-        return request;
+    @JsonProperty("requestDTO")
+    public RequestDTO getRequestDTO() {
+        return requestDTO;
     }
 
-    @JsonProperty("request")
-    public void setRequest(RequestDTO request) {
-        this.request = request;
+    @JsonProperty("requestDTO")
+    public void setRequestDTO(RequestDTO requestDTO) {
+        this.requestDTO = requestDTO;
     }
 
     @JsonProperty("location")
